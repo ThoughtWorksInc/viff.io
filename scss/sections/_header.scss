@@ -1,0 +1,31 @@
+@import "../mixin";
+
+.top-header {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+}
+
+.top-nav {
+  @include clearfix;
+  padding: 20px 120px;
+
+  .nav {
+    list-style-type: none;
+    font-size: 20px;
+    float: right;
+
+    li {
+      float: left;
+    }
+
+    li + li {
+      margin-left: 60px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

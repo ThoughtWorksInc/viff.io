@@ -1,0 +1,37 @@
+@import "../mixin";
+
+.section-one {
+  height: 724px;
+}
+
+.hero-banner {
+  background-image: url(../img/banner-left.jpg), url(../img/banner-right.jpg);
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+  background-size: 50%, 50%;
+  height: 100%;
+  padding-top: 200px;
+}
+
+.hero-title {
+  color: #fff;
+  margin: 40px auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+.logo {
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-top: 40px;
+  padding-top: 36px;
+  font-size: 36px;
+  font-style: italic;
+  padding-left: 15px;
+}
