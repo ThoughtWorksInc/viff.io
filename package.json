@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "viff mockup",
   "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/gulp/bin/gulp"
+  },
   "devDependencies": {
     "babelify": "^6.0.2",
     "browserify": "^9.0.8",
