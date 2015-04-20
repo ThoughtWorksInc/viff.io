@@ -1,4 +1,4 @@
-@import "../mixin";
+@import "../global";
 
 .top-header {
   position: absolute;
@@ -6,26 +6,36 @@
   color: #fff;
 }
 
-.top-nav {
+.top-header__nav {
   @include clearfix;
   padding: 20px 120px;
 
-  .nav {
-    list-style-type: none;
-    font-size: 20px;
-    float: right;
+  @include mobile {
+    padding: 10px 20px;
+  }
+}
 
-    li {
-      float: left;
-    }
+.top-header__nav-list {
+  list-style-type: none;
+  font-size: 20px;
+  float: right;
+}
 
-    li + li {
-      margin-left: 60px;
-    }
+.top-header__nav-item {
+  float: left;
 
-    a {
-      color: #fff;
-      text-decoration: none;
+  & + & {
+    margin-left: 60px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    @include transition;
+
+    &:hover {
+      opacity: 1;
     }
   }
 }

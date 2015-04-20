@@ -1,0 +1,50 @@
+@import "../global";
+
+$dark: #045D9B;
+$light: #fff;
+
+.btn {
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  background: transparent;
+  padding: 18px 40px;
+  font-size: 26px;
+  @include transition;
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.btn--light {
+  
+}
+
+.btn--dark {
+  border-color: $dark;
+  color: $dark;
+  &:hover {
+    background: $dark;
+    color: #fff;
+  }
+}
+
+.btn--github {
+  border-color: #444; 
+  color: #444;
+  padding: 10px 20px;
+  line-height: 1.2;
+
+  @include mobile {
+    font-size: 18px;
+  }
+
+  i {
+    font-size: 30px;
+  }
+
+  &:hover {
+    color: #fff;
+    background: #2b2b2b;
+  }
+}

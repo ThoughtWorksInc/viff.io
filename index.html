@@ -3,44 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>Viff</title>
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <main>
-      <section class="section section-one">
+      <section class="section--one">
         <header class="top-header">
-          <nav class="top-nav">
-            <ul class="nav">
-              <li>
+          <nav class="top-header__nav">
+            <ul class="top-header__nav-list">
+              <li class="top-header__nav-item">
                 <a href="#">登录</a>
               </li>
-              <li>
-                <a href="#">注册</a> 
+              <li class="top-header__nav-item">
+                <a href="#" id="registerHook">注册</a> 
               </li>  
             </ul>
           </nav>
         </header>
-        <div class="hero-banner">
-          <h1 class="hero-title">Lorem ipsum dolor sit amet, vim natum nemore voluptatibus no</h1>
-          <!-- <img class="logo" src="" alt="logo"> -->
-          <div class="logo">Viff</div>  
+        <div class="section__one--hero">
+          <h1 class="section__one--hero-title">Lorem ipsum dolor sit amet, vim natum nemore voluptatibus no</h1>
+          <div class="logo"></div>  
         </div>  
       </section>
-      <section class="section section-tow">
+      <section class="section--tow">
         <div class="container">
-          <div class="site-viff">
-            <div class="site site-left">
+          <div class="compare">
+            <div class="compare__site--left">
               www.site1.com 
             </div>
-            <div class="viff-percent">
+            <div class="compare__result">
               18% Viff 
             </div>
-            <div class="site site-right">
+            <div class="compare__site--right">
               www.site2.com 
             </div>
-          </div>        
-          <div class="viff-main-feature">
+          </div>
+          <ul class="section--tow__browsers">
+            <li>
+              <img src="img/chrome.png" alt="Chrome">
+            </li>
+            <li>
+              <img src="img/ie.png" alt="IE">
+            </li>
+            <li>
+              <img src="img/firefox.png" alt="FireFox">
+            </li>
+            <li>
+              <img src="img/safari.png" alt="Safari">
+            </li> 
+          </ul>  
+          <div class="section--tow__feature">
             <p>
               Lorem ipsum dolor sit amet
             </p>
@@ -50,62 +64,107 @@
           </div> 
         </div>
       </section>
-      <section class="section section-three">
+      <section class="section--three">
         <div class="container">
-          <ul class="feature-list">
-            <li class="feature">
-              <div class="intro"></div>
+          <ul class="section--three__feature">
+            <li class="section--three__feature-item">
+              <div class="intro">
+                <div class="intro__text">
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <i class="fa fa-cloud"></i>
+              </div>
               <h2>Lorem ipsum</h2>
-              <p>Lorem ipsum dolor sit amet</p>
             </li>
-            <li class="feature">
-              <div class="intro"></div>
+            <li class="section--three__feature-item">
+              <div class="intro">
+                <div class="intro__text">
+                   
+                </div>
+                <i class="fa fa-eye"></i>
+              </div>
               <h2>Lorem ipsum</h2>
-              <p>Lorem ipsum dolor sit amet</p>
             </li>
-            <li class="feature">
+            <li class="section--three__feature-item">
               <div class="intro"></div>
               <h2>Lorem ipsum</h2>
-              <p>Lorem ipsum dolor sit amet</p>
             </li>
-            <li class="feature">
+            <li class="section--three__feature-item">
               <div class="intro"></div>
               <h2>Lorem ipsum</h2>
-              <p>Lorem ipsum dolor sit amet</p>
             </li>
-            <li class="feature">
+            <li class="section--three__feature-item">
               <div class="intro"></div>
               <h2>Lorem ipsum</h2>
-              <p>Lorem ipsum dolor sit amet</p>
             </li>
-            <li class="feature">
+            <li class="section--three__feature-item">
               <div class="intro"></div>
               <h2>Lorem ipsum</h2>
-              <p>Lorem ipsum dolor sit amet</p>
             </li>
           </ul> 
         </div>
       </section>
-      <section class="section section-four">
+      <section class="section--four" id="registerSection">
         <div class="container">
-          <div class="sign-up-form">
+          <div class="form section--four-form">
             <h2>Lorem ipsum dolor sit amet</h2>
-            <form action="">
-              <input type="text" class="input" placeholder="Your Email Address">
-              <button type="button" class="btn btn-sign-up">注册</button>
+            <form action="" autocomplete="off">
+              <input type="text" class="input" name="email" placeholder="Your Email Address">
+              <input type="password" name="password" class="input" placeholder="Your Password">
+              <button type="button" class="btn btn--dark">注册</button>
               <p>OR</p>
               <div class="">
-                <button type="button" class="btn">Sign in with github account</button>
+                <button type="button" class="btn btn--github"><i class="fa fa-github"></i> Sign in with github account</button>
               </div> 
             </form> 
           </div>
         </div>
       </section>
     </main>
-    <footer class="section footer">
+    <footer class="footer">
       <div class="container">
-        footer
+        <div class="footer__list">
+          <div class="footer__block">
+            <ul class="footer__block-list">
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li> 
+            </ul>
+          </div>
+          <div class="footer__block">
+            <ul class="footer__block-list">
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li> 
+            </ul>
+          </div> 
+          <div class="footer__block">
+            <ul class="footer__block-list--social">
+              <li>
+                <a href="#">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-weibo"></i>
+                </a>
+              </li> 
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
+    <script src="bundle/app.js"></script>    
   </body>
 </html>

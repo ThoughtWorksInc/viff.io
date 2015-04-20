@@ -1,0 +1,16 @@
+@import "../global";
+
+.input {
+  padding: 10px 10px 6px 0;
+  color: #616161;
+  border: none;
+  border-bottom: 2px solid #a0a0a0;
+  font-weight: bold;
+  font-size: 26px;
+  @include transition;
+
+  &:focus {
+    outline: none;
+    border-color: #333;
+  }
+}

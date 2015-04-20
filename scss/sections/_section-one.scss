@@ -1,37 +1,48 @@
-@import "../mixin";
+@import "../global";
 
-.section-one {
-  height: 724px;
+.section--one {
+  height: 800px;
+
+  @include mobile {
+    height: 680px;
+  }
 }
 
-.hero-banner {
-  background-image: url(../img/banner-left.jpg), url(../img/banner-right.jpg);
+.section__one--hero {
+  background-image: url(../img/hero-banner.png);
+  background-color: #042246;
+  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-position: left top, right top;
-  background-size: 50%, 50%;
   height: 100%;
   padding-top: 200px;
+
+  @include mobile {
+    padding-top: 80px;
+  }
 }
 
-.hero-title {
+.section__one--hero-title {
   color: #fff;
   margin: 40px auto;
   text-align: center;
   font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include mobile {
+    margin: 20px auto;
+  }
 }
 
 .logo {
-  display: block;
-  height: 100px;
-  width: 100px;
-  border-radius: 100px;
+  background: url(../img/viff-logo.svg) no-repeat transparent;
+  background-size: contain;
+  height: 120px;
+  width: 120px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fff;
-  border: 1px solid #ddd;
   margin-top: 40px;
   padding-top: 36px;
-  font-size: 36px;
-  font-style: italic;
   padding-left: 15px;
 }
