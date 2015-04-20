@@ -1,7 +1,6 @@
 .section--four {
-  height: 400px;
   text-align: center;
-  padding-top: 100px;
+  padding: 100px 0;
   color: #555;
 
   @include mobile {
@@ -31,5 +30,10 @@
       width: 100%;
       margin-bottom: 20px;
     }
+  }
+
+  .separator {
+    font-size: 24px;
+    margin: 30px 0;
   }
 }
